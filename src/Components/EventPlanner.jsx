@@ -1,21 +1,21 @@
 import React from 'react';
-import './EventPlanner.css'; // Import CSS file for styling
-
+import './EventPlanner.css';
+import Footer from './Footer';
 const EventPlanner = () => {
     return (
         <div className="event-planner-container">
             <header>
                 <h1>Welcome to Event Planner</h1>
             </header>
-        <section className='description'>
+        <section className="description">
             <p>
                 Plan and organize your events effortlessly with Event Planner. From
                 birthdays to corporate meetings, we've got you covered.
             </p>
 
-            <button className='get-started-button'>Get started</button>
+            <button className="get-started-button">Get started</button>
         </section>
-        <section className='events_categories'>
+        <section className="events_categories">
             <ul>
                 <h2>Social events:</h2>
                 <li>Birthday parties</li>
@@ -44,7 +44,7 @@ const EventPlanner = () => {
                 <li>Cultural celebrations</li>
             </ul>
         </section>
-        <section className='features'>
+        <section className="features">
             <h2>Features</h2>
             <ul>
                 <li>Easy event creation and management</li>
@@ -54,7 +54,7 @@ const EventPlanner = () => {
                 <li>Reminders and notifications</li>
             </ul>
         </section>
-        <section className='testimonials'>
+        <section className="testimonials">
             <h2>Testimonials</h2>
                 <div className="testimonial">
                     <p>"Event Planner made organizing my wedding a breeze. Highly recommended!"</p>
@@ -65,7 +65,7 @@ const EventPlanner = () => {
                     <p className="author">- John Smith</p>
                 </div>
         </section>
-        <section className='contact'>
+        <section className="contact">
             <h2>Contact Us</h2>
             <form>
                 <input type="text" placeholder="Name" />
@@ -74,6 +74,7 @@ const EventPlanner = () => {
                 <button className="submit-button">Send</button>
             </form>
         </section>
+        <Footer />
         </div>
     );
 };
